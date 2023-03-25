@@ -74,7 +74,7 @@ export async function getStaticProps() {
   );
 
   const contract = new ethers.Contract(
-    process.env.NEXT_PUBLIC_ADDRESS,
+     process.env.NEXT_PUBLIC_ADDRESS,
     CampaignFactory.abi,
     provider
   );
