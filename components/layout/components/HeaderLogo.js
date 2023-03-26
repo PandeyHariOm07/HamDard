@@ -7,10 +7,10 @@ const HeaderLogo = () => {
 }
 
 const Logo = styled.h1`
-  font-weight: normal;
+  font-weight: bold;
   font-size: 40px;
   margin-left: 11px;
-  font-family: 'Praise';
+  font-family: 'sans-serif';
   letter-spacing: 3px;
   cursor: pointer;
 `

@@ -5,8 +5,8 @@ import { toast } from 'react-toastify';
 import {TailSpin} from 'react-loader-spinner'
 import {create as IPFSHTTPClient} from 'ipfs-http-client';
 
-const projectId = process.env.NEXT_PUBLIC_IPFS_ID
-const projectSecret = process.env.NEXT_PUBLIC_IPFS_KEY
+const projectId = '2NYntdIZPeoiNYe7eDPerRHgch4'
+const projectSecret = '60bd31a4867e179e7ddfa10502d0c4a2'
 const auth = 'Basic ' + Buffer.from(projectId + ":" + projectSecret).toString('base64')
 
 const client = IPFSHTTPClient({

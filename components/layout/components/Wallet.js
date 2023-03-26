@@ -51,6 +51,56 @@ const Wallet = () => {
     </ConnectWalletWrapper>
   );
 };
+// const ganacheUrl = "http://localhost:7545"; // replace with the URL of your Ganache network
+// const ganacheNetworkId = "5777"; // replace with the network ID of your Ganache network
+// const ganacheNetworkName = "Ganache"; // replace with the name of your Ganache network
+// const ganacheSymbol = "CPAY"; // replace with the symbol of the native currency of your Ganache network
+
+// const networks = {
+//   ganache: {
+//     chainId: '0x${Number(1337).toString(16)}',
+//     chainName: ganacheNetworkName,
+//     nativeCurrency: {
+//       name: ganacheSymbol,
+//       symbol: ganacheSymbol,
+//       decimals: 18,
+//     },
+//     rpcUrls: [ganacheUrl],
+//   },
+// };
+
+// const Wallet = () => {
+//   const [address, setAddress] = useState("");
+//   const [balance, setBalance] = useState("");
+
+//   const connectWallet = async () => {
+//     await window.ethereum.request({ method: "eth_requestAccounts" });
+//     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+//     if (provider.network !== "ganache") {
+//       await window.ethereum.request({
+//         method: "wallet_addEthereumChain",
+//         params: [
+//           {
+//             ...networks["ganache"],
+//           },
+//         ],
+//       });
+//     } 
+//     const account = provider.getSigner();
+//     const Address = await account.getAddress();
+//     setAddress(Address);
+//     const Balance = ethers.utils.formatEther(await account.getBalance());
+//     setBalance(Balance);
+//   };
+
+//   return (
+//     <ConnectWalletWrapper onClick={connectWallet}>
+//       {balance == '' ? <Balance></Balance> : <Balance>{balance.slice(0,4)} {ganacheSymbol}</Balance> }
+//       {address == '' ? <Address>Connect Wallet</Address> : <Address>{address.slice(0,6)}...{address.slice(39)}</Address>}
+//     </ConnectWalletWrapper>
+//   );
+// };
+
 
 const ConnectWalletWrapper = styled.div`
   display: flex;
